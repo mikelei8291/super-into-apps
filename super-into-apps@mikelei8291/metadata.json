@@ -1,0 +1,14 @@
+{
+    "name": "Super Into Apps",
+    "description": "Get into the apps directly with just the Super button.",
+    "shell-version": [
+        "45",
+        "46",
+        "47",
+        "48",
+        "49"
+    ],
+    "url": "https://github.com/mikelei8291/super-into-apps",
+    "uuid": "super-into-apps@mikelei8291",
+    "version": 1
+}
