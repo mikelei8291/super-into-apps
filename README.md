@@ -10,3 +10,9 @@ cd super-into-apps
 bun package
 gnome-extensions install dist/extension.zip
 ```
+
+## Check
+
+```fish
+bun check
+```
