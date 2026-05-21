@@ -24,7 +24,8 @@
     "scripts": {
         "build": "bun build.ts",
         "clear": "rm -rf dist",
-        "package": "bun run build; cd dist; zip -r9 extension.zip *"
+        "package": "bun run build; cd dist; zip -r9 extension.zip *",
+        "check": "shexli dist/extension.zip"
     },
     "shell-version": [
         "49",
