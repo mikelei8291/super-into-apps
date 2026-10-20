@@ -4,6 +4,7 @@ import pkg from "./package.json";
 
 interface Package {
     name: string;
+    version: string;
     namespace: string;
     appName: string;
     description: string;
@@ -24,7 +25,8 @@ const MetadataGeneratorPlugin = (pkg: Package): BunPlugin => ({
                 description: pkg.description,
                 uuid: `${pkg.name}@${pkg.namespace}`,
                 "shell-version": pkg["shell-version"],
-                url: pkg.homepage
+                url: pkg.homepage,
+                "version-name": pkg.version
             };
             await write(join(build.config.outdir, "metadata.json"), JSON.stringify(metadata, null, 4));
         });
