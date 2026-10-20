@@ -10,10 +10,10 @@
         "url": "https://github.com/mikelei8291/super-into-apps"
     },
     "devDependencies": {
-        "@girs/gjs": "^4.0.0-rc.15",
-        "@girs/gnome-shell": "^50.0.0",
-        "@types/bun": "^1.3.14",
-        "typescript": "^6.0.3"
+        "@girs/gjs": "^5.5.0",
+        "@girs/gnome-shell": "^50.0.4",
+        "@types/bun": "^1.4.3",
+        "typescript": "^7.0.2"
     },
     "appName": "Super Into Apps",
     "description": "Get into the apps directly with just the Super button",
