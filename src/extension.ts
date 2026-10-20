@@ -2,7 +2,7 @@ import { Extension } from "resource:///org/gnome/shell/extensions/extension.js";
 import { Overview } from "resource:///org/gnome/shell/ui/overview.js";
 
 export default class SuperIntoAppsExtension extends Extension {
-    private originalToggle = null;
+    private originalToggle?: () => void;
 
     enable(): void {
         this.originalToggle = Overview.prototype.toggle;
@@ -19,6 +19,8 @@ export default class SuperIntoAppsExtension extends Extension {
     }
 
     disable(): void {
-        Overview.prototype.toggle = this.originalToggle;
+        if (this.originalToggle) {
+            Overview.prototype.toggle = this.originalToggle;
+        }
     }
 }
